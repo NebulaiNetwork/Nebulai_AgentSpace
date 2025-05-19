@@ -15,7 +15,7 @@
 ## Introduction
 Agent Space is an open-source framework that automatically selects the appropriate agent based on task requirements, executes the task, evaluates the results, and returns the result.
 
-## Nebulai agent space framwork
+## Nebulai agent space framework
 
 ![Alt text](https://github.com/NebulaiNetwork/Nebulai_AgentSpace/blob/main/img/Nebulai_Space.png)
 
