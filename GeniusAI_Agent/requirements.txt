@@ -1,0 +1,6 @@
+# Required libraries for GeniusAI Agent
+numpy>=1.24.0
+nltk>=3.6.7
+scikit-learn>=1.0.2
+transformers>=4.30.0
+torch>=2.0.0
