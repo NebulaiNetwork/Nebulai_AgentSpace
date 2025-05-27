@@ -1,0 +1,25 @@
+# Requirements for Nebulai_AgentSpace Multi-Agent System
+&nbsp;
+&nbsp;
+
+# Core libraries
+numpy>=1.24.0
+requests>=2.28.0
+&nbsp;
+&nbsp;
+
+# For advanced AI capabilities (if using transformers/ML models)
+transformers>=4.30.0
+torch>=2.0.0
+&nbsp;
+&nbsp;
+
+# Optional: for async communication or enhancements
+aiohttp>=3.8.4
+&nbsp;
+&nbsp;
+
+# Optional: for logging and debugging
+loguru>=0.7.0
+&nbsp;
+&nbsp;
