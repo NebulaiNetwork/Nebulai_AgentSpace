@@ -31,6 +31,20 @@ from agents.personalization_agent import PersonalizationAgent
 from agents.predictive_analytics_agent import PredictiveAnalyticsAgent
 from agents.robotics_control_agent import RoboticsControlAgent
 from agents.pattern_recognition_agent import PatternRecognitionAgent
+from agents.optimization_agent import OptimizationAgent
+from agents.learning_rate_scheduler_agent import LearningRateSchedulerAgent
+from agents.data_augmentation_agent import DataAugmentationAgent
+from agents.resource_allocation_agent import ResourceAllocationAgent
+from agents.knowledge_extraction_agent import KnowledgeExtractionAgent
+from agents.model_compression_agent import ModelCompressionAgent
+from agents.time_series_forecasting_agent import TimeSeriesForecastingAgent
+from agents.sentiment_analysis_agent import SentimentAnalysisAgent
+from agents.causal_reasoning_agent import CausalReasoningAgent
+from agents.multi_agent_negotiation_agent import MultiAgentNegotiationAgent
+from agents.simulation_agent import SimulationAgent
+from agents.meta_learning_agent import MetaLearningAgent
+from agents.autonomous_agent import AutonomousAgent
+from agents.adaptation_agent import AdaptationAgent
 
 def main():
     print("Starting SuperAI Agents Elysium Master Orchestrator...\n")
@@ -95,7 +109,7 @@ def main():
 
     # SecurityAgent anonymize data
     security_agent = SecurityAgent()
-    anonymized = security_agent.anonymize_data("User location data at 40.7128° N, 74.0060° W")
+    anonymized = security_agent.anonymize_data("User  location data at 40.7128° N, 74.0060° W")
     print(f"SecurityAgent anonymized data:\n{anonymized}\n")
 
     # FederatedLearningAgent simulate distributed learning
@@ -177,11 +191,86 @@ def main():
     pattern_agent = PatternRecognitionAgent()
     data = np.array([[1, 2], [1, 4], [5, 6]])
     pattern_agent.fit(data)
-    cluster_prediction = pattern_agent.predict(np.array([1,3]))
+    cluster_prediction = pattern_agent.predict(np.array([1, 3]))
     print(f"PatternRecognitionAgent cluster prediction:\n{cluster_prediction}\n")
+
+    # OptimizationAgent example
+    optimization_agent = OptimizationAgent()
+    optimized_plan = optimization_agent.analyze_tasks(["Task A", "Task B"])
+    optimization_agent.suggest_improvements(optimized_plan)
+
+    # LearningRateSchedulerAgent example
+    lr_scheduler = LearningRateSchedulerAgent()
+    for epoch in range(5):
+        lr_scheduler.step()
+
+    # DataAugmentationAgent example
+    data_augmentation_agent = DataAugmentationAgent()
+    augmented_text = data_augmentation_agent.augment_text("This is a sample text for augmentation.")
+    print(f"DataAugmentationAgent augmented text:\n{augmented_text}\n")
+
+    # ResourceAllocationAgent example
+    resource_agent = ResourceAllocationAgent(total_resources=100)
+    allocation = resource_agent.allocate("Task Agent 1", 30)
+    print(f"ResourceAllocationAgent allocation:\n{allocation}\n")
+
+    # KnowledgeExtractionAgent example
+    knowledge_agent = KnowledgeExtractionAgent()
+    dates = knowledge_agent.extract_dates("The event will be held on 2023-10-15.")
+    print(f"KnowledgeExtractionAgent extracted dates:\n{dates}\n")
+
+    # ModelCompressionAgent example
+    model_compression_agent = ModelCompressionAgent()
+    compressed_model = model_compression_agent.compress("DummyModel")
+    print(f"ModelCompressionAgent compressed model:\n{compressed_model}\n")
+
+    # TimeSeriesForecastingAgent example
+    time_series_agent = TimeSeriesForecastingAgent()
+    X_train_ts = np.array([[1], [2], [3]])
+    y_train_ts = np.array([10, 20, 30])
+    time_series_agent.train(X_train_ts, y_train_ts)
+    forecast = time_series_agent.forecast(np.array([[4]]))
+    print(f"TimeSeriesForecastingAgent forecast:\n{forecast}\n")
+
+    # SentimentAnalysisAgent example
+    sentiment_agent = SentimentAnalysisAgent()
+    polarity, subjectivity = sentiment_agent.analyze_sentiment("I love using AI for my projects!")
+    print(f"SentimentAnalysisAgent polarity: {polarity}, subjectivity: {subjectivity}\n")
+
+    # CausalReasoningAgent example
+    causal_agent = CausalReasoningAgent()
+    causality_result = causal_agent.infer_causality(np.random.rand(10, 10))
+    print(f"CausalReasoningAgent result:\n{causality_result}\n")
+
+    # MultiAgentNegotiationAgent example
+    negotiation_agent = MultiAgentNegotiationAgent()
+    negotiation_agent.propose_offer("Agent1", {"value": 100})
+    negotiation_agent.propose_offer("Agent2", {"value": 150})
+    best_offer = negotiation_agent.evaluate_offers()
+    print(f"MultiAgentNegotiationAgent best offer:\n{best_offer}\n")
+
+    # SimulationAgent example
+    simulation_agent = SimulationAgent()
+    simulation_result = simulation_agent.run_simulation({"name": "Test Scenario"}, iterations=100)
+    print(f"SimulationAgent result:\n{simulation_result}\n")
+
+    # MetaLearningAgent example
+    meta_learning_agent = MetaLearningAgent()
+    meta_learning_agent.learn_task("Task A", performance=0.85)
+    meta_learning_agent.adapt_new_task("Task B")
+
+    # AutonomousAgent example
+    autonomous_agent = AutonomousAgent("Autonomous Unit")
+    autonomous_agent.assess_environment({"temperature": 22, "humidity": 50})
+    decision = autonomous_agent.make_decision()
+    print(f"AutonomousAgent decision:\n{decision}\n")
+
+    # AdaptationAgent example
+    adaptation_agent = AdaptationAgent()
+    adaptation_agent.record_feedback("Positive feedback on task execution.")
+    adaptation_agent.adapt()
 
     print("Master orchestrator execution completed.")
 
 if __name__ == "__main__":
     main()
-
