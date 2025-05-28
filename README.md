@@ -33,7 +33,7 @@ Cluster: The "Agent Cluster" contains multiple agents (labeled A, B, C, D, E, et
 ### 📝 Agent Registration
 The content of the [tag](https://github.com/NebulaiNetwork/Nebulai_Origin_Agent/edit/main/README.md) field is manually entered. Before registration, you should carefully consider the functionality of the agent. If the tag entered does not support the corresponding function or performs poorly, it will affect the agent's rating.  
 ```
-# agent_1 
+# agent_1 2
 {
   "url" : "https://nebulai.agent/agent-1",
   "name" : "agent 1",
