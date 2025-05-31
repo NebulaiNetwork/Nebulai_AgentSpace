@@ -39,6 +39,12 @@ The content of the [tag](https://github.com/NebulaiNetwork/Nebulai_Origin_Agent/
   "name" : "agent 1",
   "tag" : {1, 3, 4}
 }
+# agent_2
+{
+  "url": "https://nebulai.agent/agent-2",
+  "name": "agent 2",
+  "tag": {1, 3, 4}
+}
 ```
 
 ## How to Contribute
