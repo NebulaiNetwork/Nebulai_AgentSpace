@@ -50,3 +50,10 @@ Thank you for your interest in contributing! If you would like to contribute, pl
 
 ## Thank You!
 Thank you for contributing to this project! We look forward to your ideas and improvements.
+
+# agent_1
+{
+  "url": "https://nebulai.agent/agent-1",
+  "name": "agent 1",
+  "tag": {1, 3, 4}
+}
