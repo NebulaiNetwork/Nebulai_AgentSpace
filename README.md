@@ -1,44 +1,61 @@
 <div align="center">
-  <img src="https://github.com/NebulaiNetwork/Nebulai_AgentSpace/blob/main/img/banner.png" width="500"/> 
-  
-<br>
-<a href="https://nebulai.network"><img src="https://img.shields.io/badge/Website-nebulai.network-27E6FF?style=plastic&logo=googlechrome&logoColor=white" /></a> &nbsp;
-<a href="https://twitter.com/NebulaiHQ"><img src="https://img.shields.io/twitter/follow/NebulaiHQ"></a> &nbsp
-<a href="https://t.me/Nebulai_HQ"><img src="https://img.shields.io/badge/Telegram-Nebulai_HQ-27E6FF?style=plastic&logo=telegram&logoColor=white" /></a>
-&nbsp;
-<a href="https://discord.gg/kyVHRQSFyg"><img src="https://img.shields.io/discord/1359770110310744156?color=27E6FF&label=Discord&logo=discord&logoColor=white&style=plastic" /></a>
-&nbsp;
-<a href="https://docs.nebulai.network"><img src="https://img.shields.io/badge/Gitbook-Read_Docs-27E6FF?style=plastic&logo=gitbook&logoColor=white" /></a>
-<br>
+  <img src="https://github.com/NebulaiNetwork/Nebulai_AgentSpace/blob/main/img/banner.png" width="600"/>  
+  <br><br>
+  <a href="https://nebulai.network">
+    <img src="https://img.shields.io/badge/Website-nebulai.network-27E6FF?style=plastic&logo=googlechrome&logoColor=white" />
+  </a> &nbsp;
+  <a href="https://twitter.com/NebulaiHQ">
+    <img src="https://img.shields.io/twitter/follow/NebulaiHQ?style=plastic&logo=twitter&logoColor=white" />
+  </a> &nbsp;
+  <a href="https://t.me/Nebulai_HQ">
+    <img src="https://img.shields.io/badge/Telegram-Nebulai_HQ-27E6FF?style=plastic&logo=telegram&logoColor=white" />
+  </a> &nbsp;
+  <a href="https://discord.gg/kyVHRQSFyg">
+    <img src="https://img.shields.io/discord/1359770110310744156?color=27E6FF&label=Discord&logo=discord&logoColor=white&style=plastic" />
+  </a> &nbsp;
+  <a href="https://docs.nebulai.network">
+    <img src="https://img.shields.io/badge/Gitbook-Read_Docs-27E6FF?style=plastic&logo=gitbook&logoColor=white" />
+  </a>
 </div>
 
-## Introduction
-Agent Space is an open-source framework that automatically selects the appropriate agent based on task requirements, executes the task, evaluates the results, and returns the result.
+---
 
-## Nebulai agent space framwork
+## 🚀 Introduction
 
-![Alt text](https://github.com/NebulaiNetwork/Nebulai_AgentSpace/blob/main/img/Nebulai_Space.png)
+**Agent Space** is an open-source framework that automatically selects the appropriate agent based on task requirements, executes the task, evaluates the results, and returns the outcome—all without manual switching or intervention.
 
-## Component
+---
+
+## 🧠 Nebulai Agent Space Framework
+
+![Agent Framework](https://github.com/NebulaiNetwork/Nebulai_AgentSpace/blob/main/img/Nebulai_Space.png)
+
+---
+
+## ⚙️ Core Components
+
 ### 🔥 Pioneer  
-This is the starting point that initiates the task with tags and a specific task. It sends the task with tags { tag: 1+4, task }.
+Initiates the task with specific tags and a defined objective. It sends structured task data like `{ tag: 1+4, task }`.
 
-### 🚀 Origin Agent
-Master Agent selects the suitable agents from the Agent Cluster based on the task's needs. And evaluates the outputs to determine the final result.
+### 🚀 Origin Agent  
+Acts as the **Master Agent**, selecting the most suitable agents from the cluster, evaluating the results, and determining the final outcome.
 
-### 🌐 Agent  
-Cluster: The "Agent Cluster" contains multiple agents (labeled A, B, C, D, E, etc.) that are assigned tags like 1, 2, 1+2, 3, 4, and so on.
+### 🌐 Agent Cluster  
+Contains multiple agents labeled (A, B, C, D, E…) with associated tags such as 1, 2, 1+2, 3, 4, etc. Tags define functionality.
 
-## How To Start
-### 📝 Agent Registration
-The content of the [tag](https://github.com/NebulaiNetwork/Nebulai_Origin_Agent/edit/main/README.md) field is manually entered. Before registration, you should carefully consider the functionality of the agent. If the tag entered does not support the corresponding function or performs poorly, it will affect the agent's rating.  
-```
-# agent_1 
+---
+
+## 📝 How to Start – Agent Registration
+
+The `"tag"` field in your agent config must match the agent’s true capabilities. Incorrect or weak tag-performance will impact the agent’s reputation.
+
+```json
 {
   "url" : "https://nebulai.agent/agent-1",
   "name" : "agent 1",
-  "tag" : {1, 3, 4}
+  "tag" : [1, 3, 4]
 }
+
 ```
 
 ## How to Contribute
