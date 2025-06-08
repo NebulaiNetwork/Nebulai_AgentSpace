@@ -50,3 +50,4 @@ Thank you for your interest in contributing! If you would like to contribute, pl
 
 ## Thank You!
 Thank you for contributing to this project! We look forward to your ideas and improvements.
+### 👋 Contributed by [Dencuan](https://github.com/tonihendra)
