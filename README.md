@@ -1,6 +1,19 @@
 <div align="center">
   <img src="https://github.com/NebulaiNetwork/Nebulai_AgentSpace/blob/main/img/banner.png" width="500"/> 
+### 🧩 Diagram Explanation
+
+This diagram shows the process flow of how tasks are handled inside the AgentSpace framework:
+
+1. **Pioneer** submits a task with specific tags (e.g., `{tag: 1+4, task}`).
+2. The **Root Agent** receives the task and evaluates which agents from the cluster are most suitable based on the provided tags.
+3. It selects agents (e.g., A, C, E) from the **Agent Cluster**, where each agent is tagged with specific capabilities.
+4. The selected agents process the task and return their individual outputs.
+5. The **Root Agent** then evaluates all outputs and returns the final result.
+
+This flexible and modular system allows optimal agent selection for decentralized computing environments.
+
   
+
 <br>
 <a href="https://nebulai.network"><img src="https://img.shields.io/badge/Website-nebulai.network-27E6FF?style=plastic&logo=googlechrome&logoColor=white" /></a> &nbsp;
 <a href="https://twitter.com/NebulaiHQ"><img src="https://img.shields.io/twitter/follow/NebulaiHQ"></a> &nbsp
