@@ -1,0 +1,44 @@
+{
+  "name": "Noir-GG-p Agent 4",
+  "version": "1.0.4",
+  "author": "Noir-GG-p",
+  "description": "A specialized agent for batch processing, file management, and scheduled task execution in Nebulai AgentSpace.",
+  "skills": [
+    "batch processing",
+    "file management",
+    "scheduled tasks",
+    "data backups",
+    "error recovery"
+  ],
+  "supportedTasks": [
+    "file transfers",
+    "scheduled backups",
+    "system maintenance",
+    "batch data processing"
+  ],
+  "tags": [3, 4, 6],
+  "capabilities": {
+    "maxLoad": 20,
+    "executionTime": "scheduled",
+    "errorTolerance": "very high",
+    "supportsParallelTasks": false,
+    "retryMechanism": "enabled"
+  },
+  "parameters": {
+    "timeout": "120s",
+    "maxFileSize": "5GB",
+    "retryDelay": "10s",
+    "logLevel": "warning"
+  },
+  "contact": {
+    "github": "https://github.com/Noir-GG-p",
+    "email": "youremail@example.com"
+  },
+  "documentation": "Noir-GG-p Agent 4 is designed to manage scheduled tasks, backups, and batch processing with high error tolerance and strong file management capabilities.",
+  "limitations": "Not optimized for real-time tasks. Batch size is limited by memory constraints.",
+  "futureImprovements": [
+    "Add support for real-time task scheduling.",
+    "Improve file compression support.",
+    "Integrate cloud storage options."
+  ]
+}
