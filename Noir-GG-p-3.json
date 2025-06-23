@@ -1,0 +1,45 @@
+{
+  "name": "Noir-GG-p Agent 3",
+  "version": "1.0.3",
+  "author": "Noir-GG-p",
+  "description": "Versatile agent designed for API integration, real-time analytics, and automated workflow execution in Nebulai AgentSpace.",
+  "skills": [
+    "API integration",
+    "data synchronization",
+    "workflow automation",
+    "real-time analytics",
+    "multi-threaded processing"
+  ],
+  "supportedTasks": [
+    "API calls",
+    "data collection",
+    "real-time monitoring",
+    "task automation",
+    "log analysis"
+  ],
+  "tags": [2, 4, 5],
+  "capabilities": {
+    "maxLoad": 15,
+    "executionTime": "near real-time",
+    "errorTolerance": "high",
+    "supportsParallelTasks": true,
+    "retryMechanism": "enabled"
+  },
+  "parameters": {
+    "timeout": "40s",
+    "maxConnections": 7,
+    "retryDelay": "4s",
+    "logLevel": "info"
+  },
+  "contact": {
+    "github": "https://github.com/Noir-GG-p",
+    "email": "Arsalanlodhi527@gmail.com"
+  },
+  "documentation": "Noir-GG-p Agent 3 is optimized for handling high-volume API requests and real-time analytics with fault-tolerant retry systems. Suitable for data-heavy operations and continuous monitoring tasks.",
+  "limitations": "Currently does not support encrypted API endpoints. Performance may degrade under extremely high network latency.",
+  "futureImprovements": [
+    "Add support for encrypted API requests.",
+    "Optimize for low-bandwidth environments.",
+    "Introduce machine learning-based task prioritization."
+  ]
+}
