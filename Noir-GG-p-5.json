@@ -1,0 +1,44 @@
+{
+  "name": "Noir-GG-p Agent 5",
+  "version": "1.0.5",
+  "author": "Noir-GG-p",
+  "description": "A monitoring-focused agent capable of system health checks, performance alerts, and real-time logging for Nebulai AgentSpace.",
+  "skills": [
+    "system monitoring",
+    "performance alerting",
+    "real-time logging",
+    "resource management",
+    "notification systems"
+  ],
+  "supportedTasks": [
+    "system health checks",
+    "performance tracking",
+    "real-time event logging",
+    "resource usage reporting"
+  ],
+  "tags": [1, 5, 7],
+  "capabilities": {
+    "maxLoad": 10,
+    "executionTime": "real-time",
+    "errorTolerance": "medium",
+    "supportsParallelTasks": true,
+    "retryMechanism": "disabled"
+  },
+  "parameters": {
+    "timeout": "30s",
+    "alertThreshold": "80%",
+    "logLevel": "debug",
+    "notificationType": "email"
+  },
+  "contact": {
+    "github": "https://github.com/Noir-GG-p",
+    "email": "arsalanlodhi527@gmail.com"
+  },
+  "documentation": "Noir-GG-p Agent 5 is optimized for system monitoring, real-time performance alerts, and continuous logging to ensure system stability and quick issue detection.",
+  "limitations": "Limited to email-based notifications. Does not currently support SMS or push notifications.",
+  "futureImprovements": [
+    "Integrate SMS and push notification support.",
+    "Add predictive performance degradation alerts.",
+    "Enable customizable alert levels per resource type."
+  ]
+}
